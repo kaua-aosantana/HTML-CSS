@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+/* Configuracoes universais */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Cabecalho */
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+h1{
+    font-size: 8em;
+}
+/* Configurar os backgrounds */
+
+div.fundo-imagem{
+    padding: 60px 0px 60px 20px;
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    box-shadow: 0px 2px 30px black inset;
+}
+div.fundo-imagem#fundo1{
+    background-image: url("imagens/background001.jpg");
+}
+div.fundo-imagem#fundo2{
+    background-image: url("imagens/background002.jpg");
+}
+
+/* Configurar Textos */
+
+main p{
+    font-size: 4lvi;
+    margin: 80px 0;
+}
+p.fundo-texto{
+    display: inline-block;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    font-weight: bolder;
+}
