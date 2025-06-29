@@ -46,10 +46,10 @@ div.fundo-imagem{
     box-shadow: 0px 2px 30px black inset;
 }
 div.fundo-imagem#fundo1{
-    background-image: url("imagens/background001.jpg");
+    background-image: url("../imagens/background001.jpg");
 }
 div.fundo-imagem#fundo2{
-    background-image: url("imagens/background002.jpg");
+    background-image: url("../imagens/background002.jpg");
 }
 
 /* Configurar Textos */
