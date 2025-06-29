@@ -2,5 +2,6 @@
 Estudos de HTML e CSS do Curso em Video
 
 # Lista de Projetos
-
-<a href="projetos/cordel/index.html">Projeto Site Cordel</a>
+<h1>Projetos modulo 3 - Curso em Video</h1>
+<h2>Site Cordel</h2>
+<a href="projetos/cordel/minha-tentativa/index.html">Minha tentativa</a>
