@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas Grandes</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: darkgray;
+        }
+        tbody tr{
+            border: 1px solid black;
+        }
+        tr > td:last-child{
+            text-align: end;
+        }
+        tfoot{
+            background-color: darkgray;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th><!--titulo-->
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td><!--Dado-->
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>58.813.132</td>
+            </tr>
+            <tr>
+                <td>Esperança</td>
+                <td>18.793.421</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.557.071</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>154.251.464</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
