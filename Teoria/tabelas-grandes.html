@@ -8,10 +8,16 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            background-color: rgb(41, 41, 41);
+            border-radius: 10px 10px 0 0;
+            color: white;
+            padding: 5px;
+        }
         thead{
             background-color: darkgray;
         }
-        tbody tr{
+        tbody td{
             border: 1px solid black;
         }
         tr > td:last-child{
@@ -21,14 +27,28 @@
             background-color: darkgray;
             border: 1px solid black;
         }
+        tbody tr:nth-child(3){ /* NTH-child(tipo n-egesima-filho) -> colchete diz quail(is) os filhos escolhidos*/
+            background-color: darkcyan;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <!--
+        scope: diz se o titulo é de todos os dados abaixo ou ao lado -> mecanismo busca
+            col: titulo da coluna
+            row: titulo da linha
+        
+        formatar th da coluna -> altera geral
+    -->
     <table>
+        <caption><!--Seria o titulo/legenda da tabela-->
+            População das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th><!--titulo-->
-                <th>População</th>
+                <th scope="col" width="400px">Estado</th><!--titulo-->
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -55,7 +75,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td>154.251.464</td>
             </tr>
         </tfoot>
