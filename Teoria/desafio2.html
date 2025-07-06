@@ -31,6 +31,7 @@
         }
         tr:hover td{
             background-color: lightgray;
+            color: black;
         }
     </style>
 </head>
@@ -38,14 +39,14 @@
     <table>
         <thead>
             <tr>
-                <th scope="rowgroup" rowspan="2">Área</th>
-                <th scope="rowgroup" rowspan="2">Disciplinas</th>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
                 <th scope="colgroup" colspan="2">Notas</th>
-                <th scope="rowgroup" rowspan="2">Médias</th>
+                <th scope="col" rowspan="2">Médias</th>
             </tr>
             <tr>
-                <th scope="rowgroup">Nota 1</th>
-                <th scope="rowgroup">Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -75,7 +76,7 @@
                 <td class="numero">7.3</td>
             </tr>
             <tr>
-                <th scope="col" colspan="4">Média de Exatas</th>
+                <th scope="row" colspan="4">Média de Exatas</th>
                 <td class="numero">6.2</td>
             </tr>
             <tr>
@@ -92,7 +93,7 @@
                 <td class="numero">9.15</td>
             </tr>
             <tr>
-                <th scope="col" colspan="4">Média de Humanas</th>
+                <th scope="row" colspan="4">Média de Humanas</th>
                 <td class="numero">7.75</td>
             </tr>
         </tbody>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        .nome{
+            background-color: aqua;
+        }
+        .sexo-idade{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup><!--para estilizar toda 1 coluna-->
+            <col class="nome">
+            <col class="sexo-idade" span="2"><!--span determina a quantas colunas ele se refere-->
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Kauã</td>
+            <td>Masculino</td>
+            <td>18 anos</td>
+            <td>Suporte</td>
+        </tr>
+        <tr>
+            <td>Samuel</td>
+            <td>Masculino</td>
+            <td>16 anos</td>
+            <td>Servente de pedreiro</td>
+        </tr>
+        <tr>
+            <td>Áurea</td>
+            <td>Feminino</td>
+            <td>38 anos</td>
+            <td>Atendente</td>
+        </tr>
+        <tr>
+            <td>Arielly</td>
+            <td>Feminino</td>
+            <td>13 anos</td>
+            <td>Nenhuma</td>
+        </tr>
+    </table>
+</body>
+</html>
