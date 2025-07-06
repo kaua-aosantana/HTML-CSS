@@ -25,14 +25,14 @@
     <table>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes favoritos</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes favoritos</th><!--colgroup: ele e titulo de + de 1 coluna-->
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th><!--rowgroup titulo de + de 1 linha-->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -46,12 +46,12 @@
             </tr>
             <tr>
                 <td>Cláudia Melo</td>
-                <td>Oblivion</td>
+                <td>Toy Story</td>
                 <td>Matrix</td>
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -70,6 +70,10 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <th scope="row" colspan="4">Moda</th>
+            <td>Toy Story</td>
+        </tfoot>
     </table>
 </body>
 </html>

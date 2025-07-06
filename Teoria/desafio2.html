@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 2 de tabelas</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        tbody>:nth-child(5), tbody>:nth-child(8){
+            background-color: gray;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+        .numero{
+            text-align: center;
+        }
+        tr:hover td{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Área</th>
+                <th scope="rowgroup" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="rowgroup" rowspan="2">Médias</th>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Nota 1</th>
+                <th scope="rowgroup">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="numero">7.5</td>
+                <td class="numero">4.8</td>
+                <td class="numero">6.15</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="numero">3.2</td>
+                <td class="numero">1.9</td>
+                <td class="numero">2.55</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="numero">7.6</td>
+                <td class="numero">10.0</td>
+                <td class="numero">8.8</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="numero">6.4</td>
+                <td class="numero">8.2</td>
+                <td class="numero">7.3</td>
+            </tr>
+            <tr>
+                <th scope="col" colspan="4">Média de Exatas</th>
+                <td class="numero">6.2</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="numero">6.8</td>
+                <td class="numero">5.9</td>
+                <td class="numero">6.35</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="numero">8.9</td>
+                <td class="numero">9.4</td>
+                <td class="numero">9.15</td>
+            </tr>
+            <tr>
+                <th scope="col" colspan="4">Média de Humanas</th>
+                <td class="numero">7.75</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
