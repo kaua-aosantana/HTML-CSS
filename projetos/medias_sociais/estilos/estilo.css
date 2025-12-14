@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    background-image: url("../imagens/fundo-madeira.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+iframe{
+    width: 311px; /* 311px de largura e 627px de altura */
+    height: 627px;
+    box-sizing: content-box;
+    padding: 4em;
+    background-image: url("../imagens/frame-iphone.png");
+    background-position: center center;
+}
