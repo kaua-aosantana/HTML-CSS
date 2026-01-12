@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#conteiner{
+    width: 500px;
+    height: 700px;
+    background-color: blue;
+    border: 10px solid black;
+    border-image: url("imagens/frame-iphone.png") 1 1 1 1;
+}
