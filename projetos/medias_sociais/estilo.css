@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -39,4 +40,24 @@ iframe#tela{
     left: 22px;
     width: 267px;
     height: 471px;
+}
+section#RedesSociais{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+section#RedesSociais img{
+    display: block;
+    width: 50px;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+section#RedesSociais img:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s, border .6s;
 }
