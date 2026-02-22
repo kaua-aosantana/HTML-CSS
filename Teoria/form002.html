@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 8em;
+        }
+        input{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome do usuário: </label>
+            <input type="text" name="nome" id="inome" required maxlength="100" size="50" placeholder="digite seu nome de usuário aqui" autocomplete="name">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20" autocomplete="current-password" placeholder="digite sua senha aqui">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
