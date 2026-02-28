@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #escolha_sexo label{
+            color: gray;
+        }
+        #escolha_sexo label:hover{
+            color: black;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        #escolha_sexo input:checked + label{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de escolha</h1>
+    <form action="#" method="get">
+
+        <fieldset id="escolha_sexo">
+            <legend>Escolha de Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M" checked><label for="imas">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha as linguagens que mais quer aprender</legend>
+            <input type="checkbox" name="html" id="ihtml" value="HTML 5"><label for="ihtml">HTML 5</label>
+            <input type="checkbox" name="css" id="icss" value="CSS 3"><label for="icss">CSS 3</label>
+            <input type="checkbox" name="js" id="ijs" value="JS"><label for="ijs">JavaScript</label>
+            <input type="checkbox" name="php" id="iphp" value="PHP"><label for="iphp">PHP</label>
+            <input type="checkbox" name="py" id="ipy" value="Python"><label for="ipy">Python</label>
+        </fieldset>
+        <fieldset>
+            <legend>Qual é o seu Estado bro?</legend>
+            <select name="estado" id="iestado">
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT" selected>Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
