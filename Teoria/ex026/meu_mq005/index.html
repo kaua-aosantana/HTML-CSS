@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/mobile_first.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <menu>
+            <button id="menu" onclick="AparecerLista()"><img src="imagens/icon_menu.png" alt="icone de menu"></button>
+            <ul id="lista">
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Titulo de um texto</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, nesciunt fuga iste nostrum minus mollitia, ad quis vel harum aliquid culpa exercitationem veniam ullam, totam earum eius error blanditiis dolorem!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit cum animi labore alias magnam molestias soluta enim est sequi non maxime excepturi maiores voluptas, laudantium perspiciatis? Iure voluptates facere et.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam sapiente, facere quaerat fuga tempore dolor voluptatum ea dicta ipsam, nesciunt nulla rerum illo nobis. Mollitia dolor ullam voluptate quisquam?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi voluptatem vel amet quidem maxime cumque rerum dolore eveniet. Maiores cupiditate reprehenderit quisquam pariatur corrupti a, similique enim repudiandae architecto reiciendis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam ipsum ea id mollitia, quis nemo perspiciatis. Repellendus iure dignissimos sapiente necessitatibus, possimus officia libero, illum enim nihil ipsum quas.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde id, eius perferendis aspernatur possimus eligendi temporibus ex maiores qui inventore cumque exercitationem facilis delectus odit placeat dolore aperiam nemo voluptas.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, saepe quidem asperiores non laudantium, dolore officiis odit nam suscipit qui id. Itaque praesentium nostrum beatae adipisci nobis pariatur sint dignissimos.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis odio repudiandae ratione quaerat, asperiores ducimus harum quasi maxime nobis neque at et nihil adipisci cumque praesentium laboriosam placeat esse laudantium.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem quasi, dolore sed nostrum aspernatur quae. Modi, iusto quidem ab sapiente aliquid qui velit repudiandae earum cum amet natus nulla?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolores tempore reprehenderit, voluptates voluptas est minima, nobis maxime ea, ipsa nesciunt aliquid neque provident fugiat quae reiciendis eveniet doloribus tenetur?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, quos consectetur. Adipisci hic fugiat illo voluptas eos cum qui eaque, voluptatum, quo dicta fugit perspiciatis dolorem voluptatibus iusto ut a?
+            </p>
+        </article>
+    </main>
+    <script>
+        function AparecerLista(){
+            document.getElementById("lista").classList.toggle("visivel")
+        }
+    </script>
+</body>
+</html>
