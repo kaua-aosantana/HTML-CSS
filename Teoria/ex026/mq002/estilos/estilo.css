@@ -1,3 +1,23 @@
 @charset "UTF-8";
 
 /* Para todas as medias */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color: rgb(63, 46, 252);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+h1{
+    text-shadow: 2px 2px 2px rgb(15, 15, 45);
+    text-align: center;
+    transform: translateY(50%);
+}
