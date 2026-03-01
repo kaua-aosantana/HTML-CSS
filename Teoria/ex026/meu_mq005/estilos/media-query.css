@@ -12,4 +12,7 @@
         text-align: left;
         list-style-type: none;
     }
+    main{
+        width: clamp(600px, 50%, 900px);
+    }
 }
