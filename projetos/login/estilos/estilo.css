@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    position: absolute;
+    top: 0;
+    background-color: purple;
+}
+main{
+    height: 600px;
+    width: 300px;
+    background-color: white;
+    margin: calc(50vh - 300px) auto 0;
+    border-radius: 1em;
+    overflow: hidden;
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+#foto{
+    background-image: url("../imagens/fundo.jpg");
+    background-position: left bottom;
+    background-size: cover;
+    height: 30%;
+}
+#formulario{
+    padding: 1em;
+}
+#formulario h1{
+    text-align: center;
+}
+.registro{
+    height: 3em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    background-color: purple;
+    position: relative;
+}
+.registro i{
+    font-size: 2.4em;
+    color: white;
+}
+.registro input{
+    height: 90%;
+    display: inline-block;
+    width: 85%;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 10%;
+}
+.botao input{
+    width: 100%;
+    display: block;
+    padding: 1em;
+    background-color: rgb(82, 171, 255);
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1.1em;
+}
+.botao button{
+    width: 100%;
+    display: block;
+    border: 1px solid blue;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: transparent;
+    border-radius: 0.5em;
+}
+.botao button a{
+    display: block;
+    text-decoration: none;
+    color: rgb(30, 74, 127);
+    font-size: 1.2em;
+}
+.botao button i{
+    font-size: 1em;
+}
