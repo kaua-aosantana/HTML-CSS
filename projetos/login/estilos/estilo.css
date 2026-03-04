@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 html, body{
@@ -11,77 +13,55 @@ html, body{
     height: 100vh;
 }
 body{
-    position: absolute;
-    top: 0;
-    background-color: purple;
+    background-color: #4b037e;
 }
 main{
-    height: 600px;
-    width: 300px;
+    width: 260px;
+    height: 540px;
     background-color: white;
-    margin: calc(50vh - 300px) auto 0;
-    border-radius: 1em;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    border-radius: 1.5em;
     overflow: hidden;
 }
-section{
+.imagem{
     width: 100%;
-    height: 100%;
-}
-#foto{
+    height: 40%;
     background-image: url("../imagens/fundo.jpg");
     background-position: left bottom;
-    background-size: cover;
-    height: 30%;
 }
-#formulario{
+.formulario{
+    width: 100%;
+    height: 60%;
     padding: 1em;
 }
-#formulario h1{
+.texto h1{
     text-align: center;
+    margin-bottom: .6em;
 }
-.registro{
+.texto p{
+    font-size: .8em;
+    margin-bottom: .5em;
+}
+
+.cadastro p{
+    width: 100%;
     height: 3em;
-    margin: 1em 0;
-    border-radius: 0.5em;
-    background-color: purple;
-    position: relative;
+    background-color: #4b037e;
+    border-radius: .6em;
+    margin-bottom: .5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.registro i{
-    font-size: 2.4em;
+.cadastro i{
     color: white;
+    font-size: 2.5em;
 }
-.registro input{
-    height: 90%;
-    display: inline-block;
-    width: 85%;
-    border-radius: 0.5em;
-    position: absolute;
-    top: 10%;
-}
-.botao input{
+.cadastro input{
+    height: 100%;
     width: 100%;
-    display: block;
-    padding: 1em;
-    background-color: rgb(82, 171, 255);
-    border-radius: 0.5em;
-    border: none;
-    font-size: 1.1em;
+    border-radius: .6em;
 }
-.botao button{
-    width: 100%;
-    display: block;
-    border: 1px solid blue;
-    margin: 1em 0;
-    padding: 1em;
-    background-color: transparent;
-    border-radius: 0.5em;
-}
-.botao button a{
-    display: block;
-    text-decoration: none;
-    color: rgb(30, 74, 127);
-    font-size: 1.2em;
-}
-.botao button i{
-    font-size: 1em;
+.botoes{
+    height: max-content;
 }
