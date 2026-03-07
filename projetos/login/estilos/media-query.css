@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 718px){
+    main{
+        width: 640px;
+        height: 340px;
+        overflow: auto;
+        position: relative;
+    }
+    .imagem{
+        width: 20%;
+        height: 100%;
+        display: inline-block;
+    }
+    .formulario{
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        display: inline-block;
+        padding: 0;
+    }
+}
