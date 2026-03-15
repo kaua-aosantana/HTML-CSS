@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    body{
+        background: linear-gradient(to top, darkblue 40%, rgb(0, 191, 255));
+    }
+    main{
+        width: 700px;
+        height: 300px;
+    }
+    section{
+        display: inline-block;
+    }
+    .imagem{
+        width: 30%;
+        height: 100%;
+    }
+    .formulario{
+        width: 68%;
+        vertical-align: top;
+
+        form{
+            .cadastro{
+                input{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    main{
+        width: 900px;
+        height: 350px;
+        position: relative;
+    }
+    section{
+        position: absolute;
+    }
+    .imagem{
+        right: 0;
+        width: 50%;
+    }
+    .formulario{
+        left: 0;
+        width: 50%;
+        
+        .texto{
+            h1{
+                margin-bottom: 1em;
+            }
+            p{
+                margin-bottom: 1em;
+            }
+        }
+        form{
+            .cadastro{
+                input{
+                    width: 89%;
+                }
+            }
+        }
+    }
+}
