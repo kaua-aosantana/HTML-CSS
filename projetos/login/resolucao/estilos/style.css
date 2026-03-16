@@ -29,7 +29,6 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 515px;
@@ -39,6 +38,8 @@ section{
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+
+    transform: translate(-50%, -50%);
 }
 #imagem{
     background-image: url("../imagens/capa.jpg");
@@ -61,8 +62,29 @@ p{
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 2px solid #5f2c82;
     margin: 5px 0px;
+}
+.campo i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px); /* sempre na ultima linha*/
+}
+.campo input:focus{
+    background-color: white;
+    outline: none;
 }
 form label{
     display: none;
