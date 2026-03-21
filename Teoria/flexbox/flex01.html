@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            position: absolute;
+            width: 100dvw;
+            height: 100dvh;
+        }
+        .conteiner{
+            width: 90%;
+            height: 600px;
+            margin: calc((100vh - 600px)/2) auto;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .caixa{
+            background-color: rgb(128, 23, 56);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="caixa">1</div>
+        <div class="caixa">2</div>
+        <div class="caixa">3</div>
+        <div class="caixa">4</div>
+        <div class="caixa">5</div>
+        <div class="caixa">6</div>
+    </div>
+</body>
+</html>
